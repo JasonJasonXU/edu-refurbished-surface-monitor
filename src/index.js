@@ -27,7 +27,7 @@ function weixinNotify(key, logDesc, logDesp) {
     desp: logDesp,
   };
   const dataStr = querystring.stringify(data);
-  return axios.default.post(`https://sc.ftqq.com/${key}.send`, dataStr).then(res => res.data);
+  return axios.default.post(`https://sctapi.ftqq.com/SCT15767TGbvJngrf1aD8hXg4xCiHae1N.send`, dataStr).then(res => res.data);
 }
 
 function formatDate(date, fmt) {
@@ -132,4 +132,5 @@ async function run(wantToBuyProductNameRegex = /Surface Go/, sizeRegex = /128GB/
   }
 }
 
-run(/Surface Go|Surface Pro 6/, /4415Y\/8GB\/128GB|i7\/16GB\/512GB/);
+run(/Surface Go 2|Surface Go/, /4425Y\/8GB\/128GB|4415Y\/4GB\/64GB/);
+//run(/Surface Go/, /4415Y\/8GB\/128GB/);
