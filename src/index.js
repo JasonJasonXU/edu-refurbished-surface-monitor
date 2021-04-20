@@ -132,5 +132,6 @@ async function run(wantToBuyProductNameRegex = /Surface Go/, sizeRegex = /128GB/
   }
 }
 
-run(/Surface Go 2|Surface Go/, /4425Y\/8GB\/128GB|4415Y\/4GB\/64GB/);
+run(/Surface Go 2|Surface Go|Surface Pro 7/, /4425Y\/8GB\/128GB|4415Y\/4GB\/64GB|i5\/8GB\/128GB/);
+//run(/Surface Go 2|Surface Go/, /4425Y\/8GB\/128GB|4415Y\/4GB\/64GB/);
 //run(/Surface Go/, /4415Y\/8GB\/128GB/);
